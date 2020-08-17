@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'lives#index'
+
   devise_for :users
-  root to: 'home#index'
+  
+  resources :lives
 end
