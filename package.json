@@ -1,5 +1,11 @@
 {
   "name": "easy-lives",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/maikondouglas/easy-lives.git"
 }
