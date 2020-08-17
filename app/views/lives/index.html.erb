@@ -13,10 +13,13 @@
   <tbody>
     <% @lives.each do |live| %>
       <tr>
-        <td><%= link_to live.subject, link %></td>
+        <td><%= link_to live.subject, live %></td>
         <td><%= live.description %></td>
-        <td><%= live.author %></td>
-        <td><%= link_to 'Edit', edit_live_path(live) %></td>
+        <td><%= live.author.name %></td>
+
+        <% if live.author == current_user %>
+          <td><%= link_to 'Editar', edit_live_path(live) %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
